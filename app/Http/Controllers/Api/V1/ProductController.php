@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    const ELEMENTS_PER_PAGE = 15;
+    const ELEMENTS_PER_PAGE = 25;
 
     /**
      * Display a listing of the resource.
@@ -31,7 +31,7 @@ class ProductController extends Controller
 
         return response()->json([
                 'success' => true,
-                'data' => ProductResource::collection($data)
+                'data' => $data,
             ]
         );
     }
