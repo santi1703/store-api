@@ -6,6 +6,8 @@ For use it, you will have to set the database for it to use in *.env* file.
 
 You will also have to run the migrations using the command *php artisan migrate* for it to have
 the required DB tables available.
+
+After that you can fill the database with fake data by running *php artisan db:seed* on the terminal
 ___
 ## Available methods
 
